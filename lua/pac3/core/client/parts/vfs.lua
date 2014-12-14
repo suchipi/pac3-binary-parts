@@ -202,9 +202,10 @@ function PART:OnRemove()
 end
 
 --editor config
-
-pace.PartTree.advanced.vfs = true
-pace.PartIcons.vfs = "icon16/shape_square_add.png"
+hook.Add("pac_pace_postconfig","vfs",function()
+	pace.PartTree.advanced.vfs = true
+	pace.PartIcons.vfs = "icon16/shape_square_add.png"
+end)
 
 pac.RegisterPart(PART)
 
