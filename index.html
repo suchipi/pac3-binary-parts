@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="pac3-binary-parts : PAC3 parts with a dependency on clientside binary modules">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>pac3-binary-parts</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/suchipi/pac3-binary-parts">View on GitHub</a>
+
+          <h1 id="project_title">pac3-binary-parts</h1>
+          <h2 id="project_tagline">PAC3 parts with a dependency on clientside binary modules</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/suchipi/pac3-binary-parts/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/suchipi/pac3-binary-parts/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>
+<a id="pac3-binary-parts" class="anchor" href="#pac3-binary-parts" aria-hidden="true"><span class="octicon octicon-link"></span></a>PAC3 Binary Parts</h2>
+
+<p>Here are a set of PAC3 parts that aren't included in mainline pac3 because they have a dependency on clientside binary modules. Naturally, they require pac3 to function.</p>
+
+<h2>
+<a id="included-parts" class="anchor" href="#included-parts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Included parts</h2>
+
+<h3>
+<a id="vfs" class="anchor" href="#vfs" aria-hidden="true"><span class="octicon octicon-link"></span></a>vfs</h3>
+
+<p>Allows downloading of files to support other pac3 parts. Right now it only supports being used with the model part but this part is under heavy development and this could change.
+Depends on the VFS Module, which you can obtain from <a href="https://github.com/suchipi/pac3-binary-parts/releases/download/vfs-12%2F13%2F2014/gmcl_vfs_win32.dll">here</a>.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>The lua code can be downloaded as a .tar.gz or .zip above, or you can clone the <a href="https://github.com/suchipi/pac3-binary-parts.git">git repo</a>. The lua code can just go in a folder in addons as per usual.
+All the clientside modules should be placed in GarrysMod/garrysmod/lua/bin (Note: Won't work from addons, needs to be placed in your real GarrysMod/garrysmod/lua/bin)</p>
+
+<h2>
+<a id="special-thanks" class="anchor" href="#special-thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Special Thanks</h2>
+
+<ul>
+<li>CapsAdmin for writing PAC3 and putting up with my bullshit</li>
+<li>Zeh Matt for writing the original VFS Module</li>
+<li>Python1320 for getting the VFS module working in Gmod 13 and adding RemoveFile and RemoveDir</li>
+<li>Meta Construct for letting me test there and putting up will all my github madness</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">pac3-binary-parts maintained by <a href="https://github.com/suchipi">suchipi</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
