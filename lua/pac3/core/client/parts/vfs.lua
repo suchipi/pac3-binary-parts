@@ -236,7 +236,7 @@ end)
 
 hook.Add("pac_model:SetModel","vfs",function(modelpart,var)
 	if not modelpart.vfs_loading then
-		return var
+		return
 	else
 		return "models/editor/axis_helper.mdl"
 	end
