@@ -202,7 +202,11 @@ function PART:OnRemove()
 end
 
 --editor config
-hook.Add("pac_pace_postconfig","vfs",function()
+hook.Add("pac_pace_postconfig","vfs",function() --hook name on metastruct version until resolved
+	pace.PartTree.advanced.vfs = true
+	pace.PartIcons.vfs = "icon16/shape_square_add.png"
+end)
+hook.Add("pac_EditorPostConfig","vfs",function() --hook name on caps version until resolved
 	pace.PartTree.advanced.vfs = true
 	pace.PartIcons.vfs = "icon16/shape_square_add.png"
 end)
