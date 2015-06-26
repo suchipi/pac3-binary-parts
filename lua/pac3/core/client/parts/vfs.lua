@@ -7,10 +7,7 @@ end
 
 --vfs (module) stuff
 
-if file.Exists("lua/bin/gmcl_vfs_win32.dll","GAME") or 
-   file.Exists("lua/bin/gmcl_vfs_linux.dll","GAME") or 
-   file.Exists("lua/bin/gmcl_vfs_osx.dll","GAME") then
-	require("vfs")
+if pcall(require, "vfs") then
 	hook.Add("pac.net.PlayerInitialSpawn","pac_vfsnotify",function()
 		pac.setHasVfs(true)
 		pac.requestVfsStatus()
