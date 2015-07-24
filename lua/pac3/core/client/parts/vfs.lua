@@ -6,8 +6,8 @@ local function dprint(...)
 end
 
 --vfs (module) stuff
-
-if pcall(require, "vfs") then
+local res = file.Find("lua/bin/gmcl_vfs_*.dll",'GAME') or {}
+if (res[1] or file.Exists("lua/includes/modules/vfs.lua",'GAME')) and pcall(require, "vfs") and vfs then
 	hook.Add("pac.net.PlayerInitialSpawn","pac_vfsnotify",function()
 		pac.setHasVfs(true)
 		pac.requestVfsStatus()
